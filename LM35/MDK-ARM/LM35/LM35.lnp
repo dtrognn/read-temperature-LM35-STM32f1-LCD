@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"lm35\startup_stm32f103xb.o"
+"lm35\main.o"
+"lm35\stm32f1xx_it.o"
+"lm35\stm32f1xx_hal_msp.o"
+"lm35\stm32f1xx_hal_gpio_ex.o"
+"lm35\stm32f1xx_hal_adc.o"
+"lm35\stm32f1xx_hal_adc_ex.o"
+"lm35\stm32f1xx_hal.o"
+"lm35\stm32f1xx_hal_rcc.o"
+"lm35\stm32f1xx_hal_rcc_ex.o"
+"lm35\stm32f1xx_hal_gpio.o"
+"lm35\stm32f1xx_hal_dma.o"
+"lm35\stm32f1xx_hal_cortex.o"
+"lm35\stm32f1xx_hal_pwr.o"
+"lm35\stm32f1xx_hal_flash.o"
+"lm35\stm32f1xx_hal_flash_ex.o"
+"lm35\stm32f1xx_hal_exti.o"
+"lm35\stm32f1xx_hal_tim.o"
+"lm35\stm32f1xx_hal_tim_ex.o"
+"lm35\system_stm32f1xx.o"
+--strict --scatter "LM35\LM35.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LM35.map" -o LM35\LM35.axf
